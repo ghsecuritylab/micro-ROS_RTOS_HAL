@@ -1,0 +1,2 @@
+freertos_hal_printf.c:26:5:__io_putchar	24	static
+freertos_hal_printf.c:34:5:_write	32	static

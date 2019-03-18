@@ -1,0 +1,11 @@
+ifeq ($(CONFIG_STM32_I2C1),y)
+CSRCS += microros_i2c_hal.c microros_i2c_nuttx.c
+endif
+ifeq ($(CONFIG_STM32_SPI1),y)
+CSRCS += microros_spi_nuttx.c microros_hal_spi.c
+endif
+
+CSRCS += microros_gpio_hal.c
+
+DEPPATH += --dep-path microros_hal_peripherals
+VPATH += :microros_hal_peripherals
